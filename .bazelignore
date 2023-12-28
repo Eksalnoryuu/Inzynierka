@@ -1,0 +1,4 @@
+.git
+bazel-out
+# **/symlinked_node_modules_yarn
+node_modules
