@@ -9,10 +9,12 @@ cc_library(
         "src/**/*.inl",
         "*.inl",
     ]),
-    copts = ["-Ilibs/utils/src"],
     visibility = ["//visibility:public"],
     deps = [
         "//third_party/spdlog",
         "//third_party/sqlite",
+        "//third_party/boost:system",
+        "//libs/utils",
+        "//third_party/zeromqcpp",
     ],
 )
